@@ -364,3 +364,86 @@ body {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+
+/* Plain Folder Icon Size Pastel */
+.folderIconWrapper__48112 {
+    top: 48px !important; 
+    position: relative !important;
+}
+
+.svg_cc5dd2{
+  z-index: 0;
+}
+
+.folderIconWrapper__48112::after {
+  z-index: 1;
+  content: "";
+  background-color: var(--custom-folder-color);
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 14px;
+  position: absolute;
+  clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
+  transition: opacity 0.1s ease;
+}
+.folderPreview__48112:hover::after {
+  opacity: 0;
+}
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+  opacity: 0;
+  filter: blur(2px);
+  transition: opacity 0.2s ease, filter 0.2s ease !important;
+}
+.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+  background-color: #000000;
+}
+.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+  background-color: #777777;
+}
+
+.isExpanded__48112 .folderButtonContent__48112{
+  bottom: 100%;
+  width: 50px;
+  height: 50px;
+}
+.isExpanded__48112 .folderPreviewWrapper__48112{
+  opacity: 0;
+}
+.base_c48ade.vc-betterFolders-sidebar-grid {
+		grid-template-columns: [start] 80px [guilds-end] min-content [betterFoldersSidebar-end] 240px [channelsEnd] 1fr [end];
+		grid-template-areas: "titleBar titleBar titleBar titleBar" "guildsList betterFoldersSidebar notice notice" "guildsList betterFoldersSidebar channelsList page";
+	}
+.base_c48ade.vc-betterFolders-sidebar-grid .sidebar_c48ade {
+  grid-template-columns: [start] 80px [guilds-end] min-content [betterFoldersSidebar-end] 240px [end];
+  grid-template-areas: "guilds betterFoldersSidebar sidebar" "guilds betterFoldersSidebar panels";
+  width: auto !important;
+}
+.stack_dbd263{
+  height: auto !important;
+}
+
+.visual-refresh .theme-darker, .visual-refresh.theme-darker {
+--background-primary : #36393f !important;
+--background-secondary-alt: #282a2e !important;
+}
+
+.listItem__650eb:has(.guildSeparator__252b6) {
+    margin: 1px 0 1px 0;
+}
+
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)){
+--background-base-lowest: #2d2e31 !important;
+--background-base-low: #36393f !important;
+--background-tertiary: #2f3136 !important;
+--background-secondary: #36393f !important;
+}
+.scroller_ef3116{
+  left:6px;
+}
+
+.vc-ranb-button{
+  top:8px;
+}
+
