@@ -1,35 +1,13 @@
 # NewerOldCord
 
 **A personal project to bring back the previous Discord UI.**  
-_NewerOldCord is a fork of [OldCord](https://github.com/milbits/oldcord), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design._
-
----
-
-# Comparison
-
-![Preview](https://github.com/FrCynda/NewerOldCord/blob/main/compare.png)
-
----
-
-# Need Old UI Screenshots
-
-I'm missing a lot of visual references from the old Discord UI for my theme. Stuff like:
-
-    Pinned messages
-    Inbox / Mentions
-    Server settings
-    Notification dropdowns
-    User popouts / profiles
-    Member list or role popups
-
-I don’t have many screenshots of those, and memory does NOT serve me well. If you have anything, screenshots, clips, whatever—post them on this [server](https://discord.gg/aAHWPZHfs2). Even rough ones help a lot.
+_NewerOldCordCustom is a fork of [NewerOldCord](https://github.com/FrCynda/NewerOldCord), more updated, to suit my personal usage_
 
 
-## ❗ Disclaimer
 
-**NewerOldCord** is a fork of the original **OldCord** theme. With Discord rolling out a brand new UI, the old OldCord layout started to feel a bit outdated — so I decided to give it a refresh.
+**NewerOldCordCustom** is a fork of the original **NewerOldCord** theme. With Discord rolling out a brand new UI, the old NewerOldCord layout started to feel a bit outdated — so I decided to give it a refresh.
 
-The goal of this project is to **update OldCord to better resemble the Discord UI that was just retired**, keeping the structure of the older layout while modernizing it to look more like the recent version that many users were familiar with.
+The goal of this project is to **update NewerOldCord to better resemble the Discord UI that was just retired**, keeping the structure of the older layout while modernizing it to look more like the recent version that many users were familiar with.
 
 I'm very much an **amateur** — not a CSS expert — and this is all built through trial, error, and lots of tweaking. This is not going to be a long term project, I'm only doing this for myself for now and sharing it. The theme will break with subsequent discord updates, I do not know if I'll have the motivation or will to fix issues that will arise in the future.
 
@@ -53,7 +31,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 
 ### ✅ BetterDiscord
 
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css)  
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
    (Right-click > "Save As")
 2. Move it to your themes folder:  
    - **Windows**: `%appdata%/BetterDiscord/themes`  
@@ -65,7 +43,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 ### ✅ Vencord
 
 #### Local Installation:
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css)
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
 2. In Discord: `Settings > Vencord > Themes > Open Theme Folder`
 3. Place the file in that folder and enable it.
 
@@ -74,7 +52,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 2. Click “Add Theme” and paste this URL:
 
 ```
-https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css
+https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css
 ```
 
 ---
@@ -84,5 +62,5 @@ https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.
 You can also import it directly with:
 
 ```css
-@import url("https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css");
 ```
