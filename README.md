@@ -1,4 +1,4 @@
-# NewerOldCord
+# NewerOldCordCustom
 
 **A personal project to bring back the previous Discord UI.**  
 _NewerOldCordCustom is a fork of [NewerOldCord](https://github.com/FrCynda/NewerOldCord), more updated, to suit my personal usage_
