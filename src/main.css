@@ -503,6 +503,7 @@ body {
 
 .typing_b88801{
 	margin-top: -1px;
+	margin-left: 10px;
 }
 
 .messagesWrapper__36d07{
@@ -516,4 +517,8 @@ d: path("M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.3
 
 transform: scale(1.1);
 transform: translate(-3px, -3px);
+}
+
+.title_bb0d86{
+	visibility: hidden;
 }
