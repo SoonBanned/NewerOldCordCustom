@@ -496,7 +496,7 @@ body {
 	margin-bottom: 20px;
 }
 .attachButton__0923f {
-	height: 20px;
+	height: 20px !important;
 	padding: unset !important;
 	margin-top: -1px;
 }
