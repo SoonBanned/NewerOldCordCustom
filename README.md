@@ -31,7 +31,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 
 ### ✅ BetterDiscord
 
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
+1. [Download `main.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
    (Right-click > "Save As")
 2. Move it to your themes folder:  
    - **Windows**: `%appdata%/BetterDiscord/themes`  
@@ -43,7 +43,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 ### ✅ Vencord
 
 #### Local Installation:
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
+1. [Download `main.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
 2. In Discord: `Settings > Vencord > Themes > Open Theme Folder`
 3. Place the file in that folder and enable it.
 
@@ -64,3 +64,8 @@ You can also import it directly with:
 ```css
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css");
 ```
+
+### Todo list
+
+• fix anchoring of message buttons (should be anchored to bottom not top)
+• refactor css to avoid stacking too much stacking of changes on same attributes of same selector (probably will never have the faith to do it, but could be good for long term usage)
