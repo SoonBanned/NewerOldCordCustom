@@ -64,6 +64,10 @@
 	--search-popout-option-answer-color: #caccce;
 	--search-popout-date-picker-hint-text: #caccce;
 	--search-popout-date-picker-hint-value-text: #ffffff;
+
+	--background-secondary: hsl(223, calc(var(--saturation-factor, 1) * 7%), 20%);
+	--background-secondary-alt: hsl(220, calc(var(--saturation-factor, 1) * 7%), 17%);
+	--background-tertiary: hsl(216, calc(var(--saturation-factor, 1) * 7%), 14%);
 }
 
 body {
@@ -453,4 +457,5 @@ transform: translate(1px);
   background-color: rgba(255, 255, 255, 0.048);
 
 }
+
 
