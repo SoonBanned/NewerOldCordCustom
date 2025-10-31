@@ -12,10 +12,18 @@
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 
 
+.stack_dbd263.folderGuildsList__48112{
+	height: 100% !important;
+}
+
+.folderGroupBackground__48112{
+	height: 100%;
+}
+
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
-	--background-base-low: #232428;
-	--background-base-lower: #313338;
-	--background-base-lowest: #2b2d31;
+	--background-base-low: #363a3f;
+	--background-base-lower: #2f3137;
+	--background-base-lowest: #363a3f;
 	--bg-base-tertiary: #1e1f22;
 	--custom-channel-members-bg: #2b2d31;
 	--background-mod-subtle: #2b2d31;
@@ -445,3 +453,4 @@ transform: translate(1px);
   background-color: rgba(255, 255, 255, 0.048);
 
 }
+
