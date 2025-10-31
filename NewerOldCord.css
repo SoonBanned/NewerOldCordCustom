@@ -25,9 +25,9 @@
 }
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
-	--background-base-low: #363a3f;
-	--background-base-lower: #2f3137;
-	--background-base-lowest: #363a3f;
+	--background-base-low: #343339;
+	--background-base-lower: #2f2e34;
+	--background-base-lowest: #29282d;
 	--bg-base-tertiary: #1e1f22;
 	--custom-channel-members-bg: #2b2d31;
 	--background-mod-subtle: #2b2d31;
@@ -461,6 +461,7 @@ transform: translate(1px);
   background-color: rgba(255, 255, 255, 0.048);
 
 }
+
 
 
 
