@@ -20,6 +20,10 @@
 	height: 100%;
 }
 
+.folderGroup__48112:not(.isExpanded__48112) .folderIcon__48112 svg {
+     display: unset !important; 
+}
+
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
 	--background-base-low: #363a3f;
 	--background-base-lower: #2f3137;
@@ -457,5 +461,6 @@ transform: translate(1px);
   background-color: rgba(255, 255, 255, 0.048);
 
 }
+
 
 
