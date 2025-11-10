@@ -1,7 +1,7 @@
 # NewerOldCord
 
 **A personal project to bring back the previous Discord UI.**  
-_NewerOldCord is a fork of [OldCord](https://github.com/milbits/oldcord), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design._
+_NewerOldCordCustom is a fork of [NewerOldCord](https://github.com/FrCynda/NewerOldCord), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design and personnal adjustments._
 
 ---
 
@@ -27,7 +27,7 @@ I don’t have many screenshots of those, and memory does NOT serve me well. If 
 
 ## ❗ Disclaimer
 
-**NewerOldCord** is a fork of the original **OldCord** theme. With Discord rolling out a brand new UI, the old OldCord layout started to feel a bit outdated — so I decided to give it a refresh.
+**NewerOldCordCustom** is a fork of the original **OldCord** theme. With Discord rolling out a brand new UI, the old OldCord layout started to feel a bit outdated — so I decided to give it a refresh.
 
 The goal of this project is to **update OldCord to better resemble the Discord UI that was just retired**, keeping the structure of the older layout while modernizing it to look more like the recent version that many users were familiar with.
 
