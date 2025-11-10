@@ -21,11 +21,13 @@
 	height: 100%;
 }
 
-.folderIcon__48112 {
-	dsiplay: block !important;
+.folderGroup__48112:not(.isExpanded__48112) .folderIcon__48112 svg {
+	display: block;
 }
 
-
+.container_e131a9 {
+    gap: calc(var(--space-xs)*3);
+}
 
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
