@@ -12,6 +12,67 @@
 @import url("https://milbits.github.io/oldcord/src/components/vars.css");
 
 
+/*CHAT GPT EDITS TO MAKE BETTERFOLDER NOT TAKE SPACE WHEN FULLSCREEN VIEWING*/
+
+/* Collapse left grid tracks + zero the variables in fullscreen */
+.base__5e434[data-fullscreen="true"] {
+  /* keep grid (Discord relies on it), but remove the two left tracks */
+  grid-template-columns: [start] 0 [guildsEnd] 0 [channelsEnd] 1fr [end] !important;
+
+  /* nuke the widths used by the left rail */
+  --custom-guild-list-width: 0px !important;
+  --custom-guild-sidebar-width: 0px !important;
+}
+
+/* Hide the actual left-rail elements so they don't paint borders/gaps */
+.base__5e434[data-fullscreen="true"] .guilds__5e434,
+.base__5e434[data-fullscreen="true"] .sidebar__5e434 {
+  display: none !important;
+  width: 0 !important;
+}
+
+/* Kill the left border the channel list would draw when visible */
+.base__5e434[data-fullscreen="true"] .sidebarList__5e434 {
+  border: 0 !important;
+}
+
+/* Make sure the page area uses the full grid */
+.base__5e434[data-fullscreen="true"] .page__5e434 {
+  grid-area: page !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+/* === restore window buttons / title bar in fullscreen === */
+:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106  {
+  display: flex !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 20px !important;
+  z-index: 10000 !important;
+  background: var(--background-tertiary, #202225) !important;
+}
+
+/* keep the close/minimize/maximize buttons visible */
+:root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
+  display: flex !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+
+/*END OF CHAT GPT EDITS TO MAKE BETTERFOLDER NOT TAKE SPACE WHEN FULLSCREEN VIEWING*/
+
+
+
+
+
+
+
+
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
 	--background-base-low: #232428;
 	--background-base-lower: #313338;
