@@ -1,7 +1,10 @@
 # NewerOldCord
 
 **A personal project to bring back the previous Discord UI.**  
-_NewerOldCordCustom is a fork of [NewerOldCord](https://github.com/FrCynda/NewerOldCord), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design and personnal adjustments._
+_NewerOldCordCustom is a fork of [NewerOldCordCustom](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design and personnal adjustments._
+
+_A lot of the modification we're made to make BetterFolders works and not break anything, and PlainIconFolder work too._
+
 
 ---
 
@@ -53,7 +56,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 
 ### ✅ BetterDiscord
 
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css)  
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
    (Right-click > "Save As")
 2. Move it to your themes folder:  
    - **Windows**: `%appdata%/BetterDiscord/themes`  
@@ -65,7 +68,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 ### ✅ Vencord
 
 #### Local Installation:
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css)
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)
 2. In Discord: `Settings > Vencord > Themes > Open Theme Folder`
 3. Place the file in that folder and enable it.
 
@@ -74,7 +77,7 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 2. Click “Add Theme” and paste this URL:
 
 ```
-https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css
+https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css
 ```
 
 ---
@@ -84,5 +87,5 @@ https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.
 You can also import it directly with:
 
 ```css
-@import url("https://raw.githubusercontent.com/FrCynda/NewerOldCord/refs/heads/main/src/main.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css");
 ```
