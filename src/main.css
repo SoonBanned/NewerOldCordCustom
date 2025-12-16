@@ -810,12 +810,12 @@ transform: translate(1px);
 
 
 .svg_cc5dd2{
-    width: 64px;
-    height: 64px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    width: 64px !important;
+    height: 64px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
 }
 .wrapper_cc5dd2{
-    transform: translate(-7px, -8px);
+    transform: translate(-7px, -8px) !important;
 }
 
