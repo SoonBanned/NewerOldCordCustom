@@ -21,8 +21,12 @@
 .stack__dbd26 .folderGuildsList__48112{
     height: 100% !important;
 }
-
-
+.wrapper_ef3116{
+    margin-bottom: 0;
+}
+.title_c38106{
+    visibility: hidden;
+}
 .container_e131a9 {
     gap: calc(var(--space-xs)*3);
 }
@@ -36,7 +40,10 @@
     border: none !important;
     margin: 0 !important;
     padding: 0 !important;
-    width: 100%;
+	margin-left: 23% !important;
+    width: 77%;
+    height: 5%;
+    --custom-panels-spacing:0px;
 }
 
 
@@ -61,8 +68,13 @@
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
+.buttons__74017, .attachWrapper__0923f{
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+.buttons__37e49{
+    gap: 0;
+}
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
 	--background-base-low: #232428;
 	--background-base-lower: #313338;
