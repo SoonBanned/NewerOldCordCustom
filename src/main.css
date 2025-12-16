@@ -11,6 +11,14 @@
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars.css");
 
+.winButtons_c38106{
+    gap: calc(var(--space-4)*4);
+    padding-right: 10px;
+    svg {
+        height: 24px;
+        width: 14px;
+    }
+}
 
 .folderIcon__48112 svg{
     display:block !important;
