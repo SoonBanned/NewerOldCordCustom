@@ -27,6 +27,41 @@
     gap: calc(var(--space-xs)*3);
 }
 
+:root{
+    --radius-sm: 0;
+    --radius-md: 0;
+    --custom-app-top-bar-height:26px
+}
+.panels__5e434{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+
+/* Scale guild icons without cropping */
+.wrapper_cc5dd2 {
+  transform: scale(1.1);
+  transform-origin: center;
+  margin-bottom: 4px;
+}
+
+/* Prevent layout shift */
+.blobContainer_e5445c {
+  overflow: visible !important;
+}
+
+
+.stack_dbd263.folderGuildsList__48112{
+    height: 110% !important;
+}
+
+.textArea__74017{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
 	--background-base-low: #232428;
@@ -753,7 +788,7 @@ transform: translate(1px);
     left:05px;
 }
 .trailing_c38106{
-    left:-30px;
+    left:0px;
 }
 
 
