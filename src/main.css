@@ -39,7 +39,7 @@
     --radius-sm: 0;
     --radius-md: 0;
     --custom-app-top-bar-height:26px
-	--guildbar-folder-size:40px;
+	--guildbar-folder-size:50px;
 }
 .panels__5e434{
     border: none !important;
@@ -816,7 +816,7 @@ transform: translate(1px);
     padding-top: 3px !important;
     padding-bottom: 3px !important;
 }
-.wrapper_cc5dd2{
-    transform: translate(-7px, -8px) !important;
+:has(> .svg_cc5dd2.shiftSVG_cc5dd2) {
+    transform: translate(-9px, -8px) !important;
 }
 
