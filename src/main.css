@@ -817,6 +817,6 @@ transform: translate(1px);
     padding-bottom: 3px !important;
 }
 :has(> .svg_cc5dd2.shiftSVG_cc5dd2) {
-    transform: translate(-9px, -8px) !important;
+    transform: translate(-7.5px, -7.5px) !important;
 }
 
