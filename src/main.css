@@ -39,6 +39,7 @@
     --radius-sm: 0;
     --radius-md: 0;
     --custom-app-top-bar-height:26px
+	--guildbar-folder-size:40px;
 }
 .panels__5e434{
     border: none !important;
@@ -809,7 +810,7 @@ transform: translate(1px);
 
 
 
-.svg_cc5dd2{
+.svg_cc5dd2.shiftSVG_cc5dd2{
     width: 64px !important;
     height: 64px !important;
     padding-top: 3px !important;
