@@ -691,8 +691,9 @@ transform: translate(1px);
 
 /*CHAT GPT EDITS TO MAKE BETTERFOLDER NOT TAKE SPACE WHEN FULLSCREEN VIEWING*/
 
+
 /* Collapse left grid tracks + zero the variables in fullscreen */
-.base__5e434[data-fullscreen="true"] {
+._5e434347c823b592-base[data-fullscreen="true"] {
   /* keep grid (Discord relies on it), but remove the two left tracks */
   grid-template-columns: [start] 0 [guildsEnd] 0 [channelsEnd] 1fr [end] !important;
 
@@ -702,19 +703,19 @@ transform: translate(1px);
 }
 
 /* Hide the actual left-rail elements so they don't paint borders/gaps */
-.base__5e434[data-fullscreen="true"] .guilds__5e434,
-.base__5e434[data-fullscreen="true"] .sidebar__5e434 {
+._5e434347c823b592-base[data-fullscreen="true"] .guilds__5e434,
+._5e434347c823b592-base[data-fullscreen="true"] .sidebar__5e434 {
   display: none !important;
   width: 0 !important;
 }
 
 /* Kill the left border the channel list would draw when visible */
-.base__5e434[data-fullscreen="true"] .sidebarList__5e434 {
+._5e434347c823b592-base[data-fullscreen="true"] .sidebarList__5e434 {
   border: 0 !important;
 }
 
 /* Make sure the page area uses the full grid */
-.base__5e434[data-fullscreen="true"] .page__5e434 {
+._5e434347c823b592-base[data-fullscreen="true"] .page__5e434 {
   grid-area: page !important;
   width: 100% !important;
   height: 100% !important;
@@ -722,7 +723,7 @@ transform: translate(1px);
 }
 
 /* === restore window buttons / title bar in fullscreen === */
-:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106  {
+:root:has(._5e434347c823b592-base[data-fullscreen="true"]) .systemBar_c38106  {
   display: flex !important;
   position: fixed !important;
   top: 0 !important;
@@ -734,7 +735,7 @@ transform: translate(1px);
 }
 
 /* keep the close/minimize/maximize buttons visible */
-:root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
+:root:has(._5e434347c823b592-base[data-fullscreen="true"]) .winButtons_c38106 {
   display: flex !important;
   opacity: 1 !important;
   pointer-events: auto !important;
