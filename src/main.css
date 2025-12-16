@@ -11,6 +11,16 @@
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars.css");
 
+.svg_cc5dd2{
+    width: 64px;
+    height: 64px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.wrapper_cc5dd2{
+    transform: translate(-7px, -8px);
+}
+
 .folderIcon__48112 svg{
     display:block !important;
 }
