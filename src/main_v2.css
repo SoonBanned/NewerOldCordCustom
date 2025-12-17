@@ -711,3 +711,13 @@ transform: translate(1px);
 ._48112cbe77dc5022-folderIcon:hover{
     background-color: rgba(0,0, 0,0);
 }
+:root:has(._8a031a135bfcb9ba-container.e4491282b6a5364a-modal) .c38106a3f0c3ca76-winButtons {
+    right: 10% !important;
+}
+
+
+._8a031a135bfcb9ba-container.e4491282b6a5364a-modal {
+  display: block !important;
+  width: 100% !important;
+  height:100% !important;
+}
