@@ -32,6 +32,10 @@
 .stack__dbd26 .folderGuildsList__48112{
     height: 100% !important;
 }
+.dbd2630aec71879b-stack ._48112cbe77dc5022-folderGuildsList{
+    height: 100% !important;
+}
+
 .wrapper_ef3116{
     margin-bottom: 0;
 }
@@ -48,6 +52,15 @@
     --radius-md: 0;
     --custom-app-top-bar-height:26px
 	--guildbar-folder-size:50px;
+}
+._5e434347c823b592-panels{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+	margin-left: 23% !important;
+    width: 77%;
+    height: 5%;
+    --custom-panels-spacing:0px;
 }
 .panels__5e434{
     border: none !important;
@@ -76,12 +89,16 @@
 .stack_dbd263.folderGuildsList__48112{
     height: 110% !important;
 }
-
 .textArea__74017{
     margin-top: auto;
     margin-bottom: auto;
 }
 .buttons__74017, .attachWrapper__0923f{
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+._0923f156a0410684-attachWrapper, ._740174f3d6a2c8fe-buttons{
     margin-top: auto;
     margin-bottom: 0px;
 }
