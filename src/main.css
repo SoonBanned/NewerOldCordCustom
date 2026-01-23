@@ -10,7 +10,6 @@
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/other.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars.css");
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main_v2.css");
 
 .winButtons_c38106{
     gap: calc(var(--space-4)*4);
