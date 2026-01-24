@@ -723,9 +723,102 @@ transform: translate(1px);
 }
 
 
-.container__8a031.modal_e44912.theme-dark.theme-darker.images-dark{
+
+.container__8a031.modal_e44912{
     width: 100%;
     height: 90%;
+}
+
+.container__37e49{
+    padding-right: 0;
+}
+
+
+/* =========================================================
+   1. VARIABLES & CONFIGURATION
+   Adjust your heights here easily without breaking the logic 
+   ========================================================= */
+:root {
+  --panel-width: 240px; /* Or whatever width you want */
+  --height-default: 50px;
+  --height-voice-only: 16%;
+  --height-activity-only: 10%; 
+  --height-both: 22%; /* Voice + Activity combined */
+}
+
+/* =========================================================
+   2. PARENT PANEL LOGIC (The "Brain")
+   ========================================================= */
+.panels__5e434 {
+  position: fixed; /* Assuming you want it fixed based on your left/bottom */
+  left: 23%;
+  bottom: 0%;
+  width: var(--panel-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Stacks items from bottom up */
+  
+  /* Set a transition so the height changes smoothly */
+  transition: height 0.2s ease; 
+  
+  /* DEFAULT STATE (Profile Only) */
+  height: var(--height-default) !important;
+}
+
+/* STATE: Voice Only */
+/* Has Voice AND NOT Activity */
+.panels__5e434:has(.connection_e131a9):not(:has(.activityPanel__5e434)) {
+  height: var(--height-voice-only) !important;
+}
+
+/* STATE: Activity Only */
+/* Has Activity AND NOT Voice */
+.panels__5e434:has(.activityPanel__5e434):not(:has(.connection_e131a9)) {
+  height: var(--height-activity-only) !important;
+}
+
+/* STATE: Both Active */
+/* Has Voice AND Activity */
+.panels__5e434:has(.connection_e131a9):has(.activityPanel__5e434) {
+  height: var(--height-both) !important;
+}
+
+/* =========================================================
+   3. INTERNAL COMPONENTS
+   Style the insides without worrying about the parent height
+   ========================================================= */
+
+/* The Activity Panel (Game) */
+.activityPanel__5e434 {
+  flex-shrink: 0; /* Prevents squishing */
+  margin-bottom: 1px;
+  border-bottom: 0;
+  /* You can add specific height here if needed, e.g., height: 40px; */
+}
+
+/* The Voice Connection Wrapper */
+.wrapper_e131a9 {
+  /* Only show if we actually have a connection inside */
+  display: none; 
+}
+.wrapper_e131a9:has(.connection_e131a9) {
+  display: block;
+  flex-grow: 1; /* Take up available space */
+}
+
+/* The Connection Info Box */
+.container_e131a9 {
+  height: 100%; /* Fill the wrapper */
+  background-color: var(--background-gradient-highest, var(--background-base-low));
+}
+
+/* The User Profile (Always at bottom) */
+.container__37e49 {
+  flex-shrink: 0;
+  background-color: var(--background-gradient-highest, var(--background-base-low));
+}
+.actionButtons_e131a9{
+    height: 50%;
 }
 .panels__5e434{
     left: 23%;
