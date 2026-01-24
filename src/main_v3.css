@@ -843,3 +843,6 @@ transform: translate(1px);
     margin-top: auto;
     padding-bottom: 5px;
 }
+:root{
+    --background-primary : hsl(220, calc(var(--saturation-factor, 1) * 8%), 23%);
+}
