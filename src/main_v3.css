@@ -11,7 +11,7 @@
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign_v3.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars_v3.css");
 
-.button__85643a.iconWrapper__9293f6.clickable__9293f6[aria-label="Checkpoint"]{
+.button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Checkpoint"]{
     display:none;
 }
 
@@ -24,20 +24,20 @@
     }
 }
 
-.folderIcon__48112c svg{
+.folderIcon__48112 svg{
     display:block !important;
 }
-.folderGroupBackground__48112c{
+.folderGroupBackground__48112{
     height: 100%;
 }
-.scrollerContent__36d072{
+.scrollerContent__36d07{
     margin-bottom: 10px;
 }
-.stack__dbd263 .folderGuildsList__48112c{
+.stack__dbd26 .folderGuildsList__48112{
     height: 100% !important;
 }
 
-.wrapper__ef3116{
+.wrapper__ef311{
     margin-bottom: 0;
 }
 .title_c38106{
@@ -54,7 +54,7 @@
     --custom-app-top-bar-height:26px
 	--guildbar-folder-size:50px;
 }
-.panels__5e4343{
+.panels__5e434{
     border: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -66,31 +66,31 @@
 
 
 /* Scale guild icons without cropping */
-.wrapper__cc5dd2 {
+.wrapper__cc5dd {
   transform: scale(1);
   transform-origin: center;
   margin-bottom: 4px;
 }
 
 /* Prevent layout shift */
-.blobContainer__e5445c {
+.blobContainer__e5445 {
   overflow: visible !important;
 }
 
 
-.stack__dbd263.folderGuildsList__48112c{
+.stack__dbd26.folderGuildsList__48112{
     height: 110% !important;
 }
-.textArea__740174{
+.textArea__74017{
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.attachWrapper__0923f1, .buttons__740174{
+.attachWrapper__0923f, .buttons__74017{
     margin-top: auto;
     margin-bottom: 0px;
 }
-.buttons__37e496{
+.buttons__37e49{
     gap: 0;
 }
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
@@ -450,7 +450,7 @@ body {
 		    background: var(--background-primary) !important;
 		}
 	}
-	.channelTextArea__740174 {
+	.channelTextArea__74017 {
 		border: unset;
 		border-radius: 4px;
 	}
@@ -478,7 +478,7 @@ body {
 	}
 
 	/* jump to present bar */
-	.jumpToPresentBar__0f481c {
+	.jumpToPresentBar__0f481 {
 		bottom: 0;
 	    border-radius: 8px 8px 0 0;
 	    background-color: var(--background-accent);
@@ -489,7 +489,7 @@ body {
 			padding-left: unset;
 			padding: 0 12px;
 		}
-		.button__201d5e {
+		.button__201d5 {
 			flex: 0 0 auto;
 			font-weight: 600;
 			position: relative;
@@ -508,7 +508,7 @@ body {
 
 /* Makes "add a server and discover icons green */
 
-.circleIcon__5bc7ed {
+.circleIcon__5bc7e {
     color: var(--green);
 }
 
@@ -521,7 +521,7 @@ body {
 }
 
 /* Removes the sidebar when fullscreened in a livestream */
-.sidebar__5e4343.hidden_c48ade {
+.sidebar__5e434.hidden_c48ade {
     position: absolute !important;
 }
 
@@ -545,7 +545,7 @@ body {
     border-radius: var(--radius-round) !important;
 }
 
-.stack__dbd263 {
+.stack__dbd26 {
     background: unset; /* unsure if this breaks anything, remove if it does */
 }
 
@@ -557,30 +557,30 @@ body {
 
 
 /* Removes separator between chat and channel bar */
-.panels__5e4343 {
+.panels__5e434 {
     width: 241px !important;
     border: none !important;
 }
 
 /* Fixes channel bar width */
-.base__5e4343 .sidebar__5e4343 > .sidebarList__5e4343 {
+.base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
     width: 240px !important;
 }
 
 /* Fixes a bunch of buttons*/
-.button__201d5e:not(.cta_a3a802, .colorRed__201d5) {
+.button__201d5:not(.cta_a3a802, .colorRed__201d5) {
 	border: unset;
 }
-.item__aa8da2 {
+.item__aa8da {
 	transition: none !important;
 }
-:is(.sidebar__5e4343) .selected__aa8da2.item__aa8da2 {
+:is(.sidebar__5e434) .selected__aa8da.item__aa8da {
 	background: var(--background-modifier-selected) !important;
 }
-:is(.sidebar__5e4343) .side_b3f026 .themed__aa8da2.item__aa8da2:hover:not(.disabled_b3f026) {
+:is(.sidebar__5e434) .side_b3f026 .themed__aa8da.item__aa8da:hover:not(.disabled_b3f026) {
 	background-color: var(--background-modifier-hover);
 }
-:is(.sidebar__5e4343) .selected__aa8da2.item__aa8da2:hover {
+:is(.sidebar__5e434) .selected__aa8da.item__aa8da:hover {
 	color: var(--text-primary);
 }
 
@@ -590,12 +590,12 @@ body {
 
 /* fixes "add server" and "discover" buttons */
 
-.circleIconButton__5bc7ed {
+.circleIconButton__5bc7e {
     width: 50px!important;
     height: 50px !important;
     transform: translate(0px, 6px);
 }
-.discoveryIcon__ef3116{
+.discoveryIcon__ef311{
     transform: translate(0px, 9px);
 }
 
@@ -613,7 +613,7 @@ body {
 
 
 /* remove black outline on right side on channel side bar */
-div.sidebar__5e4343.theme-dark.images-dark {
+div.sidebar__5e434.theme-dark.images-dark {
 transform: translate(1px);
 }
 
@@ -629,7 +629,7 @@ transform: translate(1px);
 
 
 /* Collapse left grid tracks + zero the variables in fullscreen */
-.base__5e4343[data-fullscreen="true"] {
+.base__5e434[data-fullscreen="true"] {
   /* keep grid (Discord relies on it), but remove the two left tracks */
   grid-template-columns: [start] 0 [guildsEnd] 0 [channelsEnd] 1fr [end] !important;
 
@@ -639,19 +639,19 @@ transform: translate(1px);
 }
 
 /* Hide the actual left-rail elements so they don't paint borders/gaps */
-.base__5e4343[data-fullscreen="true"] .guilds__5e4343,
-.base__5e4343[data-fullscreen="true"] .sidebar__5e4343 {
+.base__5e434[data-fullscreen="true"] .guilds__5e434,
+.base__5e434[data-fullscreen="true"] .sidebar__5e434 {
   display: none !important;
   width: 0 !important;
 }
 
 /* Kill the left border the channel list would draw when visible */
-.base__5e4343[data-fullscreen="true"] .sidebarList__5e4343 {
+.base__5e434[data-fullscreen="true"] .sidebarList__5e434 {
   border: 0 !important;
 }
 
 /* Make sure the page area uses the full grid */
-.base__5e4343[data-fullscreen="true"] .page__5e4343 {
+.base__5e434[data-fullscreen="true"] .page__5e434 {
   grid-area: page !important;
   width: 100% !important;
   height: 100% !important;
@@ -659,7 +659,7 @@ transform: translate(1px);
 }
 
 /* === restore window buttons / title bar in fullscreen === */
-:root:has(.base__5e4343[data-fullscreen="true"]) .systemBar_c38106  {
+:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106  {
   display: flex !important;
   position: fixed !important;
   top: 0 !important;
@@ -671,7 +671,7 @@ transform: translate(1px);
 }
 
 /* keep the close/minimize/maximize buttons visible */
-:root:has(.base__5e4343[data-fullscreen="true"]) .winButtons_c38106 {
+:root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
   display: flex !important;
   opacity: 1 !important;
   pointer-events: auto !important;
@@ -685,7 +685,7 @@ transform: translate(1px);
 .winButtons_c38106{
     right:-80px;
 }
-.clickable__c99c29{
+.clickable__c99c2{
     left:05px;
 }
 .trailing_c38106{
@@ -694,31 +694,32 @@ transform: translate(1px);
 
 
 
-.svg__cc5dd2.shiftSVG__cc5dd2{
+.svg__cc5dd.shiftSVG__cc5dd{
     width: 52px !important;
     height: 52px !important;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
 }
-:has(> .svg__cc5dd2.shiftSVG__cc5dd2) {
+:has(> .svg__cc5dd.shiftSVG__cc5dd) {
     transform: translate(-1.5px, -1px) !important;
 }
 
-.folderButtonInner__48112c{
+.folderButtonInner__48112{
     border-radius: 20%;
 }
 
-.folderIcon__48112c:hover{
+.folderIcon__48112:hover{
     background-color: rgba(0,0, 0,0);
 }
-:root:has(.container__8a031a.modal__e44912) .winButtons_c38106 {
+:root:has(.container__8a031.modal__e4491) .winButtons_c38106 {
     right: 10% !important;
 }
 
 
-.container__8a031a.modal__e44912 {
+.container__8a031.modal__e4491 {
   display: block !important;
   width: 100% !important;
   height:90% !important;
 }
+
 
