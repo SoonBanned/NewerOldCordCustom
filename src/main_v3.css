@@ -17,7 +17,7 @@
 
 .winButtons_c38106{
     gap: calc(var(--space-4)*4);
-    padding-right: 110%;
+    padding-right: 2%;
     svg {
         height: 24px;
         width: 14px;
