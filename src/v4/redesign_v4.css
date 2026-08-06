@@ -274,7 +274,7 @@ html.refresh__visua {
 
 	.panels__5e434 {
 		display: flex;
-		width: 100%;
+		width: var(--nol-sidebar-w, 240px);
 		flex-direction: column;
 		border: none;
 		border-radius: 0;
@@ -1017,7 +1017,7 @@ html.refresh__visua {
 	}
 	.base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
 		grid-area: sidebar;
-		width: 100%;
+		width: var(--nol-sidebar-w, 240px);
 		--custom-app-panels-height: 0;
 	}
 	/* NOTE: the resize handle used to be hidden here, which made the
@@ -2712,4 +2712,3 @@ html.default__densi .item__caf37 {
 		padding-top: 21px;
 	}
 }
-

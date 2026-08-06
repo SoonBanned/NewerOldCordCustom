@@ -7,9 +7,9 @@
  */
 
 
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/other_v4.css");
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/redesign_v4.css");
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/vars_v4.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/other_v3.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign_v3.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars_v3.css");
 
 .button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Checkpoint"]{
     display:none;
@@ -525,9 +525,9 @@ transform: translate(1px);
    consumer now reads the single --nol-sidebar-w variable. */
 .base__5e434 .sidebar__5e434 {
 	position: relative;
-	width: auto !important;
 }
 html.refresh__visua .base__5e434 .sidebar__5e434 {
+	width: auto !important;
 	grid-template-columns: [start] min-content [sidebarStart] var(--nol-sidebar-w) [end];
 }
 
@@ -543,7 +543,10 @@ html.refresh__visua .base__5e434 .sidebar__5e434 {
 }
 
 .base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
-	width: 100% !important;
+	width: var(--nol-sidebar-w) !important;
+	min-width: var(--nol-sidebar-w) !important;
+	max-width: var(--nol-sidebar-w) !important;
+	flex: 0 0 auto !important;
 }
 
 /* BetterFolders (Vencord) — same variable, no percentages */
@@ -562,7 +565,7 @@ html.refresh__visua .base__5e434 .sidebar__5e434 > .panels__5e434 {
 	grid-area: panels;
 	position: static;
 	inset: auto;
-	width: 100% !important;
+	width: var(--nol-sidebar-w) !important;
 	border: none !important;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -622,6 +625,12 @@ html.refresh__visua .base__5e434 .sidebar__5e434 > .panels__5e434 {
 }
 .buttons__37e49 {
 	margin-right: 2% !important;
+}
+
+/* non-grid (no .refresh__visua) fallback: the panel is not a grid
+   item there, so give it the same explicit width. */
+.base__5e434 .sidebar__5e434 > .panels__5e434 {
+	width: var(--nol-sidebar-w) !important;
 }
 
 /* ---------- 5. Title bar / window buttons ---------- */
