@@ -3,13 +3,12 @@
  * @author @SoonBanned
  * @Description Updates NewerOldCord
  * @source https://github.com/SoonBanned/NewerOldCordCustom
- * @version 1.2
+ * @version 1.3
  */
 
-
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/other_v3.css");
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/redesign_v3.css");
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/vars_v3.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/other_v4.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/redesign_v4.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v4/vars_v4.css");
 
 .button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Checkpoint"]{
     display:none;
@@ -468,55 +467,28 @@ transform: translate(1px);
 
 /* ---------- 1. Configuration ---------- */
 :root {
-	/* Fallback / default channel-list width. The live value is
-	   derived from the resize handle in section 2 below. */
-	--nol-sidebar-w: 240px;
-
 	--background-primary: hsl(220, calc(var(--saturation-factor, 1) * 8%), 23%);
 }
 
-/* ---------- 2. Sidebar resize bridge ----------
-   Discord stores the live width in aria-valuenow on the drag
-   handle. CSS cannot read an attribute as a length (typed
-   attr() is not available in Discord's Electron build), so the
-   three digits are decoded with two cheap attribute passes and
-   recombined. Range follows aria-valuemin/max (264-432).
-   28 rules total instead of 169 one-per-pixel rules. */
+/* ---------- 2. Sidebar width ----------
+   The live width is supplied by the NoLSidebarResize Vencord plugin,
+   which writes --nol-sidebar-w and the two element widths once per
+   animation frame. The 19 :has() decoding rules that used to live here
+   are gone: they re-ran on every pixel of drag and rewrote an inherited
+   custom property, which restyled the entire channel list each time.
 
-/* hundreds + tens */
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="26"]) { --nol-sb-hi: 260; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="27"]) { --nol-sb-hi: 270; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="28"]) { --nol-sb-hi: 280; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="29"]) { --nol-sb-hi: 290; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="30"]) { --nol-sb-hi: 300; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="31"]) { --nol-sb-hi: 310; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="32"]) { --nol-sb-hi: 320; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="33"]) { --nol-sb-hi: 330; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="34"]) { --nol-sb-hi: 340; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="35"]) { --nol-sb-hi: 350; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="36"]) { --nol-sb-hi: 360; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="37"]) { --nol-sb-hi: 370; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="38"]) { --nol-sb-hi: 380; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="39"]) { --nol-sb-hi: 390; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="40"]) { --nol-sb-hi: 400; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="41"]) { --nol-sb-hi: 410; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="42"]) { --nol-sb-hi: 420; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow^="43"]) { --nol-sb-hi: 430; }
+   inherits:false is what makes this cheap. The variable is written on
+   .sidebar__5e434 and read on that same element (the grid track), so it
+   never needs to reach descendants -- and because it cannot, the browser
+   skips the subtree entirely when it changes.
 
-/* ones */
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="0"]) { --nol-sb-lo: 0; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="1"]) { --nol-sb-lo: 1; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="2"]) { --nol-sb-lo: 2; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="3"]) { --nol-sb-lo: 3; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="4"]) { --nol-sb-lo: 4; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="5"]) { --nol-sb-lo: 5; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="6"]) { --nol-sb-lo: 6; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="7"]) { --nol-sb-lo: 7; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="8"]) { --nol-sb-lo: 8; }
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"][aria-valuenow$="9"]) { --nol-sb-lo: 9; }
+   Without the plugin this stays at the initial value below and the
+   sidebar is simply a fixed width, exactly as the theme used to be. */
 
-.base__5e434 .sidebar__5e434:has(> [aria-label="Resize Sidebar"]) {
-	--nol-sidebar-w: calc((var(--nol-sb-hi, 240) + var(--nol-sb-lo, 0)) * 1px);
+@property --nol-sidebar-w {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 240px;
 }
 
 /* ---------- 3. Make the sidebar actually resizable ----------
@@ -543,10 +515,9 @@ html.refresh__visua .base__5e434 .sidebar__5e434 {
 }
 
 .base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
-	width: var(--nol-sidebar-w) !important;
-	min-width: var(--nol-sidebar-w) !important;
-	max-width: var(--nol-sidebar-w) !important;
+	width: 240px;
 	flex: 0 0 auto !important;
+	contain: layout;
 }
 
 /* BetterFolders (Vencord) — same variable, no percentages */
