@@ -1,0 +1,578 @@
+/**
+ * @name NewerOldCordCustom
+ * @author @SoonBanned
+ * @Description Updates NewerOldCord
+ * @source https://github.com/SoonBanned/NewerOldCordCustom
+ * @version 2.0
+ */
+
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/other_v5.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/redesign_v5.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/vars_v5.css");
+
+.button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Checkpoint"]{
+    display:none;
+}
+
+.folderIcon__48112 svg{
+    display:block !important;
+}
+.folderGroupBackground__48112{
+    height: 100%;
+}
+.scrollerContent__36d07{
+    margin-bottom: 10px;
+}
+.stack_dbd263 .folderGuildsList__48112{
+    height: 100% !important;
+}
+
+.wrapper_ef3116{
+    margin-bottom: 0;
+}
+.title_c38106{
+    visibility: hidden;
+}
+:root{
+	--background-surface-high: var(--background-base-low);
+    --radius-sm: 0;
+    --radius-md: 0;
+    --custom-app-top-bar-height: 26px;
+}
+
+
+/* Scale guild icons without cropping */
+.wrapper_cc5dd2 {
+  transform: scale(1);
+  transform-origin: center;
+  margin-bottom: 4px;
+}
+
+
+
+.stack_dbd263.folderGuildsList__48112{
+    height: 110% !important;
+}
+.textArea__74017{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.attachWrapper__0923f, .theme-dark:not(html.custom-theme-background) {
+	--background-base-low: #232428;
+	--background-base-lower: #313338;
+	--background-base-lowest: #2b2d31;
+	--background-secondary-alt: #2a2c31;
+	--bg-base-tertiary: #1e1f22;
+	--custom-channel-members-bg: #2b2d31;
+	--background-mod-subtle: #2b2d31;
+	--bg-brand: #5867ea ;	
+	--button-filled-brand-background: #5867ea ;
+	--header-secondary: #b9bbbe;
+	--channels-default: #8e9297;
+	--interactive-hover: #dcddde;
+	--background-floating: #18191c;
+	--background-modifier-hover: #4f545c29;
+	--background-modifier-active: #4f545c3d;
+	--background-modifier-selected: #4f545c52;
+	--background-modifier-accent: #ffffff0f;
+	--background-message-hover: #2e3034;
+	--scrollbar-thin-thumb: #202225;
+	--scrollbar-thin-track: transparent;
+	--scrollbar-auto-thumb: #1a1b1e;
+	--scrollbar-auto-track: #2b2d31;
+	--scrollbar-auto-scrollbar-color-thumb: #202225;
+	--scrollbar-auto-scrollbar-color-track: #2f3136;
+	--elevation-stroke: 0 0 0 1px #04040526;
+	--elevation-low: 0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d;
+	--elevation-medium: 0 4px 4px #00000029;
+	--elevation-high: 0 8px 16px #0000003d;
+	--deprecated-card-editable-bg: #2022254d;
+	--deprecated-quickswitcher-input-background: #72767d;
+	--deprecated-quickswitcher-input-placeholder: #ffffff4d;
+	--deprecated-text-input-bg: #0000001a;
+	--deprecated-text-input-border: #0000004d;
+	--deprecated-text-input-border-hover: #040405;
+	--deprecated-text-input-border-disabled: #202225;
+	--button-secondary-background: #4f545c;
+	--button-secondary-background-hover: #72767d;
+	--button-secondary-background-active: #72767d;
+	--primary-transparent: #ffffff1a;
+	--search-popout-option-non-text-color: #caccce;
+	--search-popout-option-filter-color: #caccce;
+	--search-popout-option-answer-color: #caccce;
+	--search-popout-date-picker-hint-text: #caccce;
+	--search-popout-date-picker-hint-value-text: #ffffff;
+}
+
+body {
+	--text-muted: #72767d;
+	--font-primary: "gg sans", "Noto Sans", sans-serif;
+	--font-display: "gg sans", "Noto Sans", sans-serif !important;
+	--font-headline: "gg sans", "Noto Sans", sans-serif;
+	--blurple: #5867ea;
+	--blurple-inverted: #ffffff;
+	--text-brand: var(--blurple) ;
+	--bg-brand: var(--blurple) ;
+	--brand-260: var(--blurple) ;
+	--brand-360: var(--blurple) ;
+	--brand-460: var(--blurple) ;
+	--brand-500: var(--blurple) ;
+	--brand-new-500: var(--blurple) ;
+	--brand-530: var(--blurple) ;
+	--brand-560: var(--blurple) ;
+	--brand-new-560: var(--blurple) ;
+	--brand-600: var(--blurple) ;
+	--yellow-hover: #e19517;
+	--yellow-inverted: #fffbf4;
+	--yellow-inverted-active: #feedd1;
+	--green-inverted: #f6fbf9;
+	--green-inverted-active: #d9f0e6;
+}
+
+
+
+
+	.radioBar__001a7 .radioIndicatorGroup__001a7:before {
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -2 28 28'%3E%3Cpath d='M3 0C1.34326 0 0 1.34277 0 3V21C0 22.6572 1.34326 24 3 24H21C22.6567 24 24 22.6572 24 21V3C24 1.34277 22.6567 0 21 0H3ZM3 1C1.89551 1 1 1.89551 1 3V21C1 22.1045 1.89551 23 3 23H21C22.1045 23 23 22.1045 23 21V3C23 1.89551 22.1045 1 21 1H3Z' stroke='' stroke-width='' fill='%2372767d' fill-rule='evenodd' clip-rule='evenodd'/%3E%3C/svg%3E");
+		position: relative
+	}
+
+	/* chat box */
+	.scrollerSpacer__36d07 {
+		height: 30px;
+	}
+	.themedBackground__74017 {
+		background: none
+	}
+	.formWithLoadedChatInput_f75fb0 {
+		.channelTextArea_f75fb0 {
+		    background: var(--background-primary) !important;
+		}
+	}
+	.channelTextArea__74017 {
+		border: unset;
+		border-radius: 4px;
+	}
+	.separator__49fc1 {
+		box-shadow: 0 1px 0 0 hsl(240 calc( 1 *5.263%) 7.451% /.3), 0 1px 2px 0 hsl(240 calc( 1 *5.263%) 7.451% /.3);
+	}
+	.header__49fc1 {
+		padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
+	}
+	.autocompleteAttached__6b0e0 {
+		left: 0;
+		right: 0;
+	}
+	.cooldownText_b21699 {
+		color: var(--font-primary) !important;
+	}
+	.base_b88801 {
+	    left: 16px;
+	    font-size: 14px;
+	    font-weight: 500;
+	    line-height: 24px;
+	    resize: none;
+	    align-items: center;
+	    color: var(--text-normal);
+	}
+
+	/* jump to present bar */
+	.jumpToPresentBar__0f481 {
+		bottom: 0;
+	    border-radius: 8px 8px 0 0;
+	    background-color: var(--background-accent);
+	    opacity: .95 !important;
+	    padding-bottom: 4px !important;
+		color: var(--white-500);
+		.barButtonBase__0f481 {
+			padding-left: unset;
+			padding: 0 12px;
+		}
+		.button__201d5 {
+			flex: 0 0 auto;
+			font-weight: 600;
+			position: relative;
+			background: unset;
+			padding-bottom: 6px;
+			&:hover {
+				background-color: unset !important;
+			}
+			.contents__201d5:after {
+				content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 16'%3E%3Cpath d='M7 10L12 15 17 10'%3E%3C/path%3E%3C/svg%3E");
+				margin-left: 8px;
+			}
+		}
+	}
+
+
+/* Makes "add a server and discover icons green */
+
+.circleIcon__5bc7e {
+    color: var(--green);
+}
+
+
+/* removes padding on guild (clan) tags next to usernames */
+.text-xs\/semibold_cf4812 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--interactive-normal);
+}
+
+/* Removes the sidebar when fullscreened in a livestream */
+.sidebar__5e434.hidden_c48ade {
+    position: absolute !important;
+}
+
+/* Fixes Forum colors (WIP) */
+.visual-refresh .mainCard_f369db {
+    background: var(--bg-overlay-4, #393c41);
+    border: 1px solid var(--border-subtle);
+}
+.visual-refresh .container_faa96b.isOpen_faa96b {
+    background-color: #393c41 ;
+}
+.visual-refresh .container_faa96b:hover {
+    background-color: #393c41; 
+}
+
+
+/* Fixes "new channel" icon colors */
+.newChannel__599fa, .channelInfo_c69b6d {
+    background-color: var(--blurple) !important;
+	color: white;
+    border-radius: var(--radius-round) !important;
+}
+
+.stack_dbd263 {
+    background: unset; /* unsure if this breaks anything, remove if it does */
+}
+
+/* Fixes "SPOILER" text of spoilered images */
+.obscureWarning__54ab5 {
+    color: white;
+}
+
+
+
+/* Removes separator between chat and channel bar */
+
+/* Fixes a bunch of buttons*/
+.button__201d5:not(.cta_a3a802, .colorRed__201d5) {
+	border: unset;
+}
+.item_aa8da2 {
+	transition: none !important;
+}
+:is(.sidebar__5e434) .selected_aa8da2.item_aa8da2 {
+	background: var(--background-modifier-selected) !important;
+}
+:is(.sidebar__5e434) .side_b3f026 .themed_aa8da2.item_aa8da2:hover:not(.disabled_b3f026) {
+	background-color: var(--background-modifier-hover);
+}
+:is(.sidebar__5e434) .selected_aa8da2.item_aa8da2:hover {
+	color: var(--text-primary);
+}
+
+
+
+
+
+/* fixes "add server" and "discover" buttons */
+
+.circleIconButton__5bc7e {
+    width: 50px!important;
+    height: 50px !important;
+    transform: translate(0px, 6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* remove black outline on right side on channel side bar */
+div.sidebar__5e434.theme-dark.images-dark {
+transform: translate(1px);
+}
+
+
+/* fix color of Message Bar */
+.scrollableContainer__74017 {
+  background-color: rgba(255, 255, 255, 0.048);
+
+}
+
+
+/*CHAT GPT EDITS TO MAKE BETTERFOLDER NOT TAKE SPACE WHEN FULLSCREEN VIEWING*/
+
+
+/* Collapse left grid tracks + zero the variables in fullscreen */
+.base__5e434[data-fullscreen="true"] {
+  /* keep grid (Discord relies on it), but remove the two left tracks */
+  grid-template-columns: [start] 0 [guildsEnd] 0 [channelsEnd] 1fr [end] !important;
+
+  /* nuke the widths used by the left rail */
+  --custom-guild-list-width: 0px !important;
+  --custom-guild-sidebar-width: 0px !important;
+}
+
+/* Hide the actual left-rail elements so they don't paint borders/gaps */
+.base__5e434[data-fullscreen="true"] .guilds__5e434,
+.base__5e434[data-fullscreen="true"] .sidebar__5e434 {
+  display: none !important;
+  width: 0 !important;
+}
+
+/* Kill the left border the channel list would draw when visible */
+.base__5e434[data-fullscreen="true"] .sidebarList__5e434 {
+  border: 0 !important;
+}
+
+/* Make sure the page area uses the full grid */
+.base__5e434[data-fullscreen="true"] .page__5e434 {
+  grid-area: page !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+/* === restore window buttons / title bar in fullscreen === */
+:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106  {
+  display: flex !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 20px !important;
+  z-index: 10000 !important;
+  background: var(--background-tertiary, #202225) !important;
+}
+
+/* keep the close/minimize/maximize buttons visible */
+:root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
+  display: flex !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+
+/*END OF CHAT GPT EDITS TO MAKE BETTERFOLDER NOT TAKE SPACE WHEN FULLSCREEN VIEWING*/
+
+
+
+.clickable__c99c2{
+    left:05px;
+}
+.wrapper_cc5dd2:has(> .svg_cc5dd2.shiftSVG_cc5dd2) {
+    transform: translate(-1.5px, -1px) !important;
+}
+
+.folderButtonInner__48112{
+    border-radius: 20%;
+}
+
+.folderIcon__48112:hover{
+    background-color: rgba(0,0, 0,0);
+}
+.container__8a031.modal__e4491 {
+  display: block !important;
+  width: 100% !important;
+  height:90% !important;
+}
+
+/* =========================================================
+   CUSTOM LAYER  —  consolidated
+   Replaces the old ad-hoc tail of this file AND the whole
+   QuickCSS. Loads after the three @imports, so it wins the
+   cascade. Self-sufficient: works even if the imported
+   files are still the unpatched upstream copies.
+   ========================================================= */
+
+/* ---------- 1. Configuration ---------- */
+:root {
+	--background-primary: hsl(220, calc(var(--saturation-factor, 1) * 8%), 23%);
+}
+
+/* ---------- 2. Sidebar width ----------
+   The live width is supplied by the NoLSidebarResize Vencord plugin,
+   which writes --nol-sidebar-w and the two element widths once per
+   animation frame. The 19 :has() decoding rules that used to live here
+   are gone: they re-ran on every pixel of drag and rewrote an inherited
+   custom property, which restyled the entire channel list each time.
+
+   inherits:false is what makes this cheap. The variable is written on
+   .sidebar__5e434 and read on that same element (the grid track), so it
+   never needs to reach descendants -- and because it cannot, the browser
+   skips the subtree entirely when it changes.
+
+   Without the plugin this stays at the initial value below and the
+   sidebar is simply a fixed width, exactly as the theme used to be. */
+
+@property --nol-sidebar-w {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 240px;
+}
+
+/* ---------- 3. Make the sidebar actually resizable ----------
+   redesign_v3 hid the drag handle outright and pinned the
+   channel list to a fixed 240px. Both are undone here; every
+   consumer now reads the single --nol-sidebar-w variable. */
+.base__5e434 .sidebar__5e434 {
+	position: relative;
+}
+
+/* the handle itself — absolutely positioned so it never
+   becomes a stray grid item and never spawns an extra row */
+.base__5e434 .sidebar__5e434 > .sidebarResizeHandle__5e434 {
+	display: block !important;
+	position: absolute;
+	inset: 0 0 0 auto;
+	width: 4px;
+	z-index: 5;
+	cursor: ew-resize;
+}
+
+.base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
+	width: 240px;
+	flex: 0 0 auto !important;
+	contain: layout;
+}
+
+
+/* ---------- 4. User panel ---------- */
+
+.activityPanel__5e434 {
+	flex-shrink: 0;
+	margin-bottom: 1px;
+	border-bottom: 0;
+}
+.wrapper_e131a9 {
+	display: none;
+}
+.wrapper_e131a9:has(.connection_e131a9) {
+	display: block;
+	flex-grow: 1;
+}
+.container_e131a9 {
+	height: 100%;
+}
+.actionButtons_e131a9 {
+	height: 50%;
+}
+:is(.container_e131a9, .container__37e49) {
+	background-color: var(--background-gradient-highest, var(--background-base-low));
+}
+.container__37e49 {
+	flex-shrink: 0;
+	padding-left: 4%;
+	padding-right: 0;
+}
+
+/* username / subtext must not be clipped by the panel */
+.panelSubtextContainer__37e49 {
+	flex: 1 1 auto !important;
+	min-width: max-content !important;
+	width: max-content !important;
+	overflow: visible !important;
+}
+.panelSubtextContainer__37e49 + * {
+	flex: 0 0 auto !important;
+}
+.hovered__0263c {
+	min-width: max-content !important;
+	max-width: none !important;
+	white-space: nowrap !important;
+}
+.hoverRoll__0263c {
+	min-width: max-content !important;
+}
+.avatarWrapper__37e49.plated__37e49 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: -5%;
+}
+.buttons__37e49 {
+	margin-right: 2% !important;
+}
+
+/* the panel follows the --nol-sidebar-w variable */
+.base__5e434 .sidebar__5e434 > .panels__5e434 {
+	width: var(--nol-sidebar-w) !important;
+}
+
+/* ---------- 5. Title bar / window buttons ---------- */
+.winButtons_c38106 {
+	gap: calc(var(--space-4) * 4);
+	padding-right: 2%;
+	right: -80px;
+}
+.winButtons_c38106 svg {
+	height: 24px;
+	width: 14px;
+}
+:root:has(.container__8a031.modal__e4491) .winButtons_c38106 {
+	right: 10% !important;
+}
+.bar_c38106 {
+	margin-bottom: -4px !important;
+}
+.trailing_c38106 {
+	left: 0;
+}
+.title_b6c092 {
+	overflow: visible;
+}
+.buttons__74017 {
+	margin: 0 0 0 auto;
+	margin-top: auto;
+	padding-bottom: 5px;
+}
+
+/* ---------- 6. Guild rail ---------- */
+.svg_cc5dd2.shiftSVG_cc5dd2 {
+	width: 52px !important;
+	height: 52px !important;
+	padding-top: 1px !important;
+	padding-bottom: 1px !important;
+	transform: translateX(-2%) scale(1.1);
+}
+.innerContainer_dfb989,
+.innerContainer_dfb989::before {
+	overflow: visible !important;
+	width: 110% !important;
+}
+
+/* ---------- 7. Misc ---------- */
+.notice__6e2b9 {
+	display: none;
+}
+
+/* ---------- 8. Merged QuickCSS ----------
+   User panel anchored under the channel list (CSS anchor positioning).
+   left: 72px is only a fallback for clients without anchor() support. */
+.sidebarList__5e434 {
+	anchor-name: --b;
+}
+.panels__5e434 {
+	position: absolute;
+	position-anchor: --b;
+	left: 72px;
+	left: anchor(left);
+	margin-bottom: -8px;
+}
+.connection_e131a9 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,232 @@
+/* redesign_v5 — the rules of redesign_v4 that actually match the current client.
+   Removed (they never matched anything):
+   - everything gated on html.refresh__visua / .dark__theme / .light__theme /
+     html.*__platf / html.theme-background__custo / html.default__densi.
+     Discord sets visual-refresh, theme-dark, platform-win, ... — those
+     mangled names do not exist in the client.
+   - title-bar rules written for bar__c3810 / winButtons__c3810 / systemBar__c3810
+     (that module is spelled bar_c38106, winButtons_c38106, ... in the live DOM).
+   - nested rules for scroller__ef311, stack__dbd26, wrapper__ef311 and the
+     *__a22cb button classes (live spellings: _ef3116, _dbd263, _a22cb0). */
+
+#app-mount .h5__b717a.eyebrow__b717a {
+	text-transform: uppercase !important;
+}
+
+#channelTabs-settingsMenu {
+	position: relative;
+	right: 20px;
+	top: -2px;
+}
+:is(.container__01ae2, .container__fb64c) > .container__9293f,
+.page__5e434 .container__01ae2 {
+	z-index: 102;
+}
+.inviteToolbar__133bf > .clickable__9293f.iconWrapper__9293f {
+	right: 90px;
+	flex-wrap: wrap;
+}
+.inviteToolbar__133bf .iconWrapper__9293f:after {
+	border-left: 1px solid var(--border-subtle);
+	content: "";
+	margin-left: 55px;
+	margin-top: -29px;
+	height: calc(var(--custom-app-top-bar-height) - var(--space-12));
+}
+
+/* server list */
+.base__5e434 .sidebar__5e434 > .guilds__5e434 {
+	width: 72px;
+	#guild-list-unread-dms:has(.listItem__650eb) {
+		padding-top: 8px !important;
+	}
+	/* the separator is a direct child of its list item */
+	.listItem__650eb:has(> .guildSeparator__252b6) {
+		margin: 6px 0 8px 0;
+	}
+	.listItem__650eb {
+		margin: 0 0 0px;
+	}
+	.guildSeparator__252b6 {
+		height: 2px;
+	}
+	.folderIcon__48112 {
+		margin-top: 0px;
+		margin-left: -1px;
+		& svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+.folderGroup__48112 {
+	--custom-folder-preview-padding: 6px;
+	--custom-folder-color: #7289da;
+}
+.folderGroup__48112:not(.isExpanded__48112) .folderIcon__48112 svg {
+	display: none;
+}
+.folderGroupBackground__48112 {
+	left: 11px;
+	width: 48px;
+	bottom: 4px;
+	border-radius: 16px 16px 25px 25px;
+	background: var(--background-modifier-accent);
+	border: none;
+}
+.folderIconWrapper__48112 {
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	border-radius: 16px;
+	--bg-mod-subtle: rgba(114, 137, 218, 0.4) !important;
+}
+.expandedFolderIconWrapper__48112 {
+	margin: 0;
+	width: 48px;
+	height: 48px;
+}
+.folderGroup__48112:is(.isExpanded__48112) .folderPreviewWrapper__48112 {
+	display: none;
+}
+.folderPreviewGuildIcon__48112 {
+	border-radius: 32px !important;
+}
+
+.listItem__650eb:has(.circleIcon__5bc7e) {
+	margin: 6px 0 0 !important;
+	.circleIconButton__5bc7e {
+		transition: border-radius 0.17s ease, background-color 0.17s ease, color 0.17s ease;
+		&.selected__5bc7e {
+			border-radius: 15px !important;
+		}
+		border-radius: 50%;
+		width: 48px;
+		height: 48px;
+	}
+}
+.guildsError__e8d03 {
+	width: 48px;
+	height: 48px;
+	border-color: var(--red);
+	&:hover {
+		background: var(--red);
+	}
+}
+.mention__3b95d {
+	box-sizing: border-box;
+	opacity: 0.9;
+	border: unset;
+	box-shadow: unset;
+	right: 1px;
+}
+
+.sidebar__5e434:after {
+	display: none;
+}
+
+/* hides left sidebar when fullscreen mode */
+.base__5e434[data-fullscreen="true"] {
+	.sidebar__5e434 {
+		display: none !important;
+	}
+}
+
+.spriteContainer__04eed {
+	--custom-emoji-sprite-size: 24px !important;
+}
+
+.layer__960e4.baseLayer__960e4 {
+	background-color: var(--bg-base-tertiary);
+}
+
+#app-mount .emojiRemove_e7d73e {
+	opacity: 0;
+	color: transparent;
+	position: absolute;
+	right: -12px;
+	width: 24px;
+	height: 24px;
+	box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+	background-color: var(--background-primary);
+	background-image: url(https://discord.com/assets/b5ad3c52d0699af9b6987839875450d4.svg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	transition: opacity 0.1s ease-in-out, box-shadow 0.1s ease-in-out, transform 0.2s ease;
+	.emojiRow_e7d73e:hover & {
+		cursor: pointer;
+		opacity: 1;
+	}
+	&:active {
+		transform: translateY(2px);
+	}
+}
+#app-mount .emojiRow_e7d73e:before {
+	display: none;
+}
+
+.container__60fa3 {
+	border: 1px solid var(--background-base-lowest);
+}
+
+/*new settings*/
+.container__8a031[data-mana-component="layer-modal"] {
+	border: none;
+	max-width: 1080px !important;
+	.panel__6131a {
+		margin: unset;
+	}
+	.content__e9e3e {
+		gap: var(--space-12);
+	}
+	.contentHeader__e9e3e {
+		border: unset;
+		padding: 0 var(--space-24) 0 var(--space-30);
+		h1 {
+			text-transform: uppercase;
+			font-weight: 600;
+			color: var(--header-primary) !important;
+		}
+	}
+	[data-text-variant="heading-lg/semibold"],
+	legend,
+	.debugTitle__bc4a3 {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 14px;
+		color: var(--header-secondary) !important;
+	}
+	.itemContent__caf37 {
+		color: var(--interactive-normal) !important;
+	}
+	.item__caf37:hover .itemContent__caf37 {
+		color: var(--interactive-hover) !important;
+	}
+	.active__caf37 .itemContent__caf37 {
+		color: var(--interactive-active) !important;
+	}
+}
+
+.sidebar__409aa {
+	background: var(--background-secondary);
+	border: none !important;
+	& h1 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: 0.02em;
+		line-height: 1.3333333333333333;
+		padding: 6px 10px;
+		margin: 0;
+		color: var(--channels-default) !important;
+	}
+}
+.fixedContent__409aa:after {
+	background: linear-gradient(to bottom, var(--background-secondary), transparent);
+}
+@container outer-container (max-width: 1080px) {
+	.modal__e4491 {
+		padding-top: 21px;
+	}
+}
