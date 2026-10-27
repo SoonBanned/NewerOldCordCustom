@@ -338,31 +338,55 @@ transform: translate(1px);
   border: 0 !important;
 }
 
-/* Make sure the page area uses the full grid */
+/* === Title bar while watching a stream in fullscreen ===
+   --nol-fullscreen-bar-height sets the bar height in fullscreen:
+     16px (default)  slim bar, window buttons kept, stream starts below it
+     0px             no bar at all, true fullscreen (Esc still exits)
+   Any other px value works the same way. */
+:root {
+  --nol-fullscreen-bar-height: 16px;
+}
+
+/* The page (and the stream inside it) starts below the bar instead of under it.
+   contain: layout makes the page the containing block, so this also holds
+   if the fullscreen call wrapper is position: fixed. */
 .base__5e434[data-fullscreen="true"] .page__5e434 {
   grid-area: page !important;
   width: 100% !important;
-  height: 100% !important;
+  height: calc(100% - var(--nol-fullscreen-bar-height)) !important;
+  margin-top: var(--nol-fullscreen-bar-height) !important;
   overflow: hidden;
+  contain: layout;
 }
 
-/* === restore window buttons / title bar in fullscreen === */
-:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106  {
+:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106 {
+  /* Discord sizes the bar and its buttons from this variable */
+  --custom-app-top-bar-height: var(--nol-fullscreen-bar-height);
   display: flex !important;
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
-  height: 20px !important;
+  height: var(--nol-fullscreen-bar-height) !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
   z-index: 10000 !important;
   background: var(--background-tertiary, #202225) !important;
 }
 
-/* keep the close/minimize/maximize buttons visible */
+/* window buttons shrunk to fit the slim bar */
 :root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
   display: flex !important;
+  height: 100%;
   opacity: 1 !important;
   pointer-events: auto !important;
+  & .winButton_c38106 {
+    height: 100%;
+  }
+  & svg {
+    height: max(0px, calc(var(--nol-fullscreen-bar-height) - 4px));
+  }
 }
 
 
