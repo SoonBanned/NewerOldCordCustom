@@ -609,3 +609,60 @@ transform: translate(1px);
 .wrapper_5dqHTG {
 	height: 100%;
 }
+
+/* ---------- 9. Member list: server tag & Vencord decorators on a second line ----------
+   Option, set in QuickCSS:
+     --nol-member-tags-newline: 0  Discord's default single-line layout (default)
+     --nol-member-tags-newline: 1  tag + platform/voice icons go under the name
+   Uses a container style query: the rules below only apply while the
+   inherited variable equals 1. */
+:root {
+	--nol-member-tags-newline: 0;
+	--nol-member-row2-gap: 2px;
+	--nol-member-row2-icon: 14px;
+}
+
+@container style(--nol-member-tags-newline: 1) {
+	/* let the name row wrap */
+	.nameAndDecorators_J1Adu_ {
+		flex-wrap: wrap;
+		row-gap: var(--nol-member-row2-gap);
+		min-width: 0;
+	}
+	/* flatten the wrappers so the name and the server tag become separate flex items */
+	.nameAndDecorators_J1Adu_ > .name_J1Adu_,
+	.nameAndDecorators_J1Adu_ .username_Iy0c7A {
+		display: contents;
+	}
+	/* line 1: name (truncated if too long), then APP tag / owner crown */
+	.nameAndDecorators_J1Adu_ .name_Iy0c7A {
+		order: 0;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.nameAndDecorators_J1Adu_ > :is(.botTag_Iy0c7A, .ownerIcon_Iy0c7A) {
+		order: 1;
+	}
+	/* forced line break */
+	.nameAndDecorators_J1Adu_::after {
+		content: "";
+		order: 2;
+		flex-basis: 100%;
+		height: 0;
+	}
+	/* line 2: server tag + Vencord decorators */
+	.nameAndDecorators_J1Adu_ .chipletContainerInner_k8jyN7,
+	.nameAndDecorators_J1Adu_ > .vc-member-list-decorators-wrapper {
+		order: 3;
+		margin-left: 0;
+	}
+	.nameAndDecorators_J1Adu_ .chipletContainerInner_k8jyN7 {
+		margin-right: 4px;
+	}
+	.nameAndDecorators_J1Adu_ > .vc-member-list-decorators-wrapper svg {
+		width: var(--nol-member-row2-icon);
+		height: var(--nol-member-row2-icon);
+	}
+}
