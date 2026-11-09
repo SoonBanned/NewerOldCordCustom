@@ -571,6 +571,11 @@ transform: translate(1px);
 	padding-top: 1px !important;
 	padding-bottom: 1px !important;
 	transform: translateX(-2%) scale(1.1);
+	border-radius: 70px; /* round guild icons (new client renders them square) */
+}
+/* center the home/DM icon inside its round button */
+.icon_JJ-hgR {
+	padding-left: 6%;
 }
 .innerContainer_or4Hj-,
 .innerContainer_or4Hj-::before {
