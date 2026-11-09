@@ -91,6 +91,11 @@ A few things you can change by pasting them in your QuickCSS:
   /* height of the window bar while watching a stream in fullscreen
      0px = no bar at all (Esc still exits fullscreen) */
   --nol-fullscreen-bar-height: 16px;
+
+  /* member list: put the server tag and the Vencord icons (platform, voice...)
+     on a second line under the username, so they stop overlapping long names
+     off by default, set it to 1 to turn it on */
+  --nol-member-tags-newline: 1;
 }
 ```
 
