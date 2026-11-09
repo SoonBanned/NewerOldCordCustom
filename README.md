@@ -1,50 +1,38 @@
-# NewerOldCord
+# NewerOldCordCustom
 
-**A personal project to bring back the previous Discord UI.**  
-_NewerOldCordCustom is a fork of [NewerOldCordCustom](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom), revamped to look more like the Discord interface that was just replaced — keeping the classic layout, but updating the visuals to feel more in line with recent design and personnal adjustments._
+**A personal project to keep the classic Discord layout alive on the current client.**  
+_It started as a fork of NewerOldCord, but by now it has been rebuilt almost from scratch: new structure, new fixes, and a lot less lag._
 
-_A lot of the modification we're made to make BetterFolders works and not break anything, and PlainIconFolder work too._
-
+_Made to work with BetterFolders and PlainFolderIcon without breaking anything._
 
 ---
 
 # Comparison
 
-![Preview](https://github.com/FrCynda/NewerOldCord/blob/main/compare.png)
+![Preview](compare.png)
+
+_Stock Discord, then NewerOldCordCustom._
 
 ---
 
-# Need Old UI Screenshots
-
-I'm missing a lot of visual references from the old Discord UI for my theme. Stuff like:
-
-    Pinned messages
-    Inbox / Mentions
-    Server settings
-    Notification dropdowns
-    User popouts / profiles
-    Member list or role popups
-
-I don’t have many screenshots of those, and memory does NOT serve me well. If you have anything, screenshots, clips, whatever—post them on this [server](https://discord.gg/aAHWPZHfs2). Even rough ones help a lot.
-
-
 ## ❗ Disclaimer
 
-**NewerOldCordCustom** is a fork of the original **OldCord** theme. With Discord rolling out a brand new UI, the old OldCord layout started to feel a bit outdated — so I decided to give it a refresh.
+I'm very much an **amateur** — not a CSS expert — and this is all built through trial, error, and lots of tweaking.
 
-The goal of this project is to **update OldCord to better resemble the Discord UI that was just retired**, keeping the structure of the older layout while modernizing it to look more like the recent version that many users were familiar with.
-
-I'm very much an **amateur** — not a CSS expert — and this is all built through trial, error, and lots of tweaking. This is not going to be a long term project, I'm only doing this for myself for now and sharing it. The theme will break with subsequent discord updates, I do not know if I'll have the motivation or will to fix issues that will arise in the future.
+Discord renames its CSS classes every now and then. When that happens, parts of the theme will break until I update it. I fix it when I can, but I'm only doing this for myself and sharing it, so no promises.
 
 ---
 
 ## 🔦 What This Theme Does
 
-- Keeps the **classic Discord layout** based on OldCord.
-- Updates visual styling to match the **previous (2024) Discord UI**
+- Keeps the **classic Discord layout**: the old title bar, the user panel under the channel list, square-ish corners.
+- Restyles everything to look like the **2024 Discord UI**: colors, buttons, inputs, modals, emoji picker, polls, forums...
+- **V5 is a performance rework.** The previous versions were the cause of some lag: rules that ran on every element of the page, and around 2,000 lines that never applied to anything. Those are gone.
+- **Fullscreen streams are actually fullscreen.** The window bar no longer sits on top of the stream.
+- Works with **BetterFolders** and **PlainFolderIcon** (Vencord).
 
 > ⚠️ **Light Mode is not supported.**  
-> This theme was built for dark mode only — it hasn’t been tested or styled for light mode.
+> This theme was built for dark mode (and tested on **Darker**) — it hasn't been styled for light mode.
 
 ---
 
@@ -56,8 +44,8 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 
 ### ✅ BetterDiscord
 
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)  
-   (Right-click > "Save As")
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/NewerOldCord.css)  
+   (Right-click > "Save As", and name it `NewerOldCord.theme.css`, BetterDiscord only picks up `.theme.css` files)
 2. Move it to your themes folder:  
    - **Windows**: `%appdata%/BetterDiscord/themes`  
    - **Linux**: `~/.config/BetterDiscord/themes`
@@ -67,25 +55,54 @@ You can use this theme with **BetterDiscord**, **Vencord**, or any modded client
 
 ### ✅ Vencord
 
+#### Online Method (recommended):
+1. Go to `Settings > Vencord > Themes`
+2. Click "Add Theme" and paste this URL:
+
+```
+https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/main_v5.css
+```
+
 #### Local Installation:
-1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css)
+1. [Download `NewerOldCord.css`](https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/NewerOldCord.css)
 2. In Discord: `Settings > Vencord > Themes > Open Theme Folder`
 3. Place the file in that folder and enable it.
 
-#### Online Method:
-1. Go to `Settings > Vencord > Themes`
-2. Click “Add Theme” and paste this URL:
-
-```
-https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css
-```
+The online method updates on its own, so you get fixes as soon as I push them.
 
 ---
 
 ### 🎛 Manual Import via CSS
 
-You can also import it directly with:
+You can also import it directly in your QuickCSS:
 
 ```css
-@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/main.css");
+@import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/main_v5.css");
 ```
+
+---
+
+## 🧩 Tweaks
+
+A few things you can change by pasting them in your QuickCSS:
+
+```css
+:root {
+  /* height of the window bar while watching a stream in fullscreen
+     0px = no bar at all (Esc still exits fullscreen) */
+  --nol-fullscreen-bar-height: 16px;
+}
+```
+
+---
+
+## 💬 Something Broke?
+
+Most of the time it's Discord renaming its classes again. If something looks off, open an issue with a screenshot (and the page's HTML if you know how to grab it from the DevTools), it helps a lot.
+
+---
+
+## ❤️ Credits
+
+- [**OldCord**](https://github.com/milbits/oldcord) by milbit — where all of this comes from.
+- [**NewerOldCord**](https://github.com/FrCynda/NewerOldCord) by Cyn — the refresh this project started from.
