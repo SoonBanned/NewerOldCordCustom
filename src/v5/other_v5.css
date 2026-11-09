@@ -48,33 +48,33 @@ code {
 }
 
 /* style dms correctly */
-.channel__972a0 {
-	.interactiveSelected__972a0 .subText__20a53 [data-text-variant="text-xs\/medium"] {
+.channel_zln_tS {
+	.interactiveSelected_zln_tS .subText_TBNqol [data-text-variant="text-xs\/medium"] {
 		color: var(--interactive-active) !important;
 	}
-	&:hover:not(:has(.interactiveSelected__972a0)) .subText__20a53 [data-text-variant="text-xs\/medium"] {
+	&:hover:not(:has(.interactiveSelected_zln_tS)) .subText_TBNqol [data-text-variant="text-xs\/medium"] {
 		color: var(--interactive-hover) !important;
 	}
-	&:hover .interactiveSelected__972a0 .name__20a53,
-	.interactiveSelected__972a0 .subText__20a53 {
+	&:hover .interactiveSelected_zln_tS .name_TBNqol,
+	.interactiveSelected_zln_tS .subText_TBNqol {
 		color: var(--interactive-active) !important;
 	}
-	& .subText__20a53 [data-text-variant="text-xs\/medium"] {
+	& .subText_TBNqol [data-text-variant="text-xs\/medium"] {
 		color: var(--channels-default) !important;
 	}
-	&:hover:has(.interactiveSelected__972a0) .interactive__bf202 {
+	&:hover:has(.interactiveSelected_zln_tS) .interactive__bf202 {
 		background: var(--background-modifier-selected) !important;
 	}
-	&:hover .muted__20a53 {
+	&:hover .muted_TBNqol {
 		color: var(--interactive-hover) !important;
-		& .avatar__20a53 {
+		& .avatar_TBNqol {
 			opacity: 1;
 		}
 	}
 }
 
 /*bot tag*/
-:not(.botTagOP__82f07, .botTagRemix__82f07) > .botText__82f07 {
+:not(.botTagOP_feVUtO, .botTagRemix_feVUtO) > .botText_feVUtO {
 	visibility: hidden;
 	font-size: 0 !important;
 	&:before {
@@ -84,11 +84,11 @@ code {
 		visibility: visible;
 	}
 }
-.botTag__82f07 {
+.botTag_feVUtO {
 	border-radius: 3px !important;
 	background: var(--blurple)
 }
-.botTagRemix__82f07 {
+.botTagRemix_feVUtO {
 	border: 1px solid var(--blurple);
 	background: transparent;
 	color: var(--blurple);
@@ -343,7 +343,7 @@ code {
 }
 
 /* revert text files*/
-.nonVisualMediaItem__f4758 .mosaicItemMediaMosaic__6c706 {
+.nonVisualMediaItem_idVBIj .mosaicItemMediaMosaic_BwHv05 {
 	max-width: 100% !important;
 }
 
@@ -366,7 +366,7 @@ code {
 }
 
 /* tweak hover buttons*/
-.hoverButtonGroup__06ab4 {
+.hoverButtonGroup_n2rO26 {
 	border-radius: 0px 0px 0px 4px;
 	background-color: transparent;
 	transition: transform 0.12s ease-in-out, opacity 0.12s ease-in-out, background-color 0.12s ease-in-out;
@@ -375,10 +375,10 @@ code {
 	right: 0px;
 }
 /*fuck ai!! rahhh*/
-.hoverButton__06ab4:has(.lottieIcon__5eb9b) {
+.hoverButton_n2rO26:has(.lottieIcon_69Onuk) {
 	display: none;
 }
-.removeMosaicItemHoverButton__6c706 {
+.removeMosaicItemHoverButton_BwHv05 {
 	color: var(--red) !important;
 	opacity: 0.8;
 	&:hover {
@@ -390,27 +390,27 @@ code {
 	}
 }
 /* keep the translucent background for stuff like images and videos bc it looks better */
-.visualMediaItemContainer__f4758 .hoverButtonGroup__06ab4 {
+.visualMediaItemContainer_idVBIj .hoverButtonGroup_n2rO26 {
 	background-color: rgb(0 0 0 / 0.5);
 	transform: translateY(-40px);
-	.mosaicItem__6c706:hover & {
+	.mosaicItem_BwHv05:hover & {
 		transform: translateY(-4px);
 	}
 }
 /* make download button bigger */
-.downloadHoverButtonIcon__6c706 {
+.downloadHoverButtonIcon_BwHv05 {
 	width: 24px !important;
 	height: 24px !important;
 }
 /* remove background hover */
-.hoverButton__06ab4 {
+.hoverButton_n2rO26 {
 	&:hover {
 		background: none;
 	}
 }
 
 /* center the download button for audio files and make it permanently visible*/
-.wrapperAudio__cf09d + .hoverButtonGroup__06ab4 {
+.wrapperAudio__cf09d + .hoverButtonGroup_n2rO26 {
 	top: 25%;
 	right: 8px;
 	transform: translateY(-50%);
@@ -418,7 +418,7 @@ code {
 	background: none;
 }
 /* same as above but for file attachments */
-.file__0ccae + .hoverButtonGroup__06ab4 {
+.file__0ccae + .hoverButtonGroup_n2rO26 {
 	top: 50%;
 	transform: translateY(-60%);
 	opacity: 1;
@@ -426,8 +426,8 @@ code {
 }
 
 /* shorten the margin by a bit so it doesnt look so separated */
-.nonVisualMediaItem__f4758 + .nonVisualMediaItem__f4758,
-.nonVisualMediaItemContainer__f4758 {
+.nonVisualMediaItem_idVBIj + .nonVisualMediaItem_idVBIj,
+.nonVisualMediaItemContainer_idVBIj {
 	margin-top: 4px;
 }
 
@@ -517,14 +517,14 @@ code {
 	min-width: 1.5rem;
 }
 
-.botTagOP__82f07 {
+.botTagOP_feVUtO {
 	color: var(--blurple);
 	background-color: transparent;
 	outline: 1px solid var(--blurple);
 	font-weight: 500;
 }
 
-.theme-dark .children__9293f:after {
+.theme-dark .children_ybUK7Z:after {
 	display: none;
 }
 
@@ -725,7 +725,7 @@ code {
 	border-radius: 3px;
 	padding: 10px;
 }
-.integration__c7f96 .lookFilled__201d5 {
+.integration__c7f96 .lookFilled_9OQtot {
 	border: solid 1px #0000004d;
 	background: #593695;
 	padding: 5px 16px;
@@ -1054,7 +1054,7 @@ h2.title__b717a,
 }
 
 /* message buttons */
-.popover__f8441 {
+.popover_DpHsW6 {
 	transform: none !important;
 	height: 32px;
 	background: var(--background-primary);
@@ -1067,12 +1067,12 @@ h2.title__b717a,
 		border: none;
 	}
 
-	/*& .separator__f8441 {  // hides emoji separator 
+	/*& .separator_DpHsW6 {  // hides emoji separator 
 		display: none;
 	}*/
 }
 
-.hoverBarButton__f8441 {
+.hoverBarButton_DpHsW6 {
 	border-radius: 0;
 	height: 24px;
 	padding: 4px;
@@ -1090,11 +1090,11 @@ h2.title__b717a,
 	}*/
 }
 
-.buttonContent__f8441,
-.icon__f8441 {
+.buttonContent_DpHsW6,
+.icon_DpHsW6 {
 	transform: none !important;
 }
-.hoverBarButton__f8441:active {
+.hoverBarButton_DpHsW6:active {
 	padding-bottom: 3px;
 	padding-top: 5px;
 	padding-left: 4px;
@@ -1179,7 +1179,7 @@ h2.title__b717a,
 
 
 
-.gameProfileModal__8e830 .lineClamp2Plus__4bd52 {
+.gameProfileModal__8e830 .lineClamp2Plus_MMUIw6 {
 	max-height: unset;
 }
 

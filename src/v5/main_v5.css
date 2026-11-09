@@ -10,27 +10,27 @@
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/redesign_v5.css");
 @import url("https://raw.githubusercontent.com/SoonBanned/NewerOldCordCustom/refs/heads/main/src/v5/vars_v5.css");
 
-.button__85643.iconWrapper__9293f.clickable__9293f[aria-label="Checkpoint"]{
+.button__85643.iconWrapper_ybUK7Z.clickable_ybUK7Z[aria-label="Checkpoint"]{
     display:none;
 }
 
-.folderIcon__48112 svg{
+.folderIcon_RTMSuZ svg{
     display:block !important;
 }
-.folderGroupBackground__48112{
+.folderGroupBackground_RTMSuZ{
     height: 100%;
 }
-.scrollerContent__36d07{
+.scrollerContent_8AE1Qq{
     margin-bottom: 10px;
 }
-.stack_dbd263 .folderGuildsList__48112{
+.stack_TWWX0S .folderGuildsList_RTMSuZ{
     height: 100% !important;
 }
 
-.wrapper_ef3116{
+.wrapper_5dqHTG{
     margin-bottom: 0;
 }
-.title_c38106{
+.title_3zSH5d{
     visibility: hidden;
 }
 :root{
@@ -42,7 +42,7 @@
 
 
 /* Scale guild icons without cropping */
-.wrapper_cc5dd2 {
+.wrapper_hqZPsU {
   transform: scale(1);
   transform-origin: center;
   margin-bottom: 4px;
@@ -50,15 +50,15 @@
 
 
 
-.stack_dbd263.folderGuildsList__48112{
+.stack_TWWX0S.folderGuildsList_RTMSuZ{
     height: 110% !important;
 }
-.textArea__74017{
+.textArea_2x8-Qn{
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.attachWrapper__0923f, .theme-dark:not(html.custom-theme-background) {
+.attachWrapper_7TM4SO, .theme-dark:not(html.custom-theme-background) {
 	--background-base-low: #232428;
 	--background-base-lower: #313338;
 	--background-base-lowest: #2b2d31;
@@ -139,18 +139,18 @@ body {
 	}
 
 	/* chat box */
-	.scrollerSpacer__36d07 {
+	.scrollerSpacer_8AE1Qq {
 		height: 30px;
 	}
-	.themedBackground__74017 {
+	.themedBackground_2x8-Qn {
 		background: none
 	}
-	.formWithLoadedChatInput_f75fb0 {
-		.channelTextArea_f75fb0 {
+	.formWithLoadedChatInput_z_gUBg {
+		.channelTextArea_z_gUBg {
 		    background: var(--background-primary) !important;
 		}
 	}
-	.channelTextArea__74017 {
+	.channelTextArea_2x8-Qn {
 		border: unset;
 		border-radius: 4px;
 	}
@@ -189,7 +189,7 @@ body {
 			padding-left: unset;
 			padding: 0 12px;
 		}
-		.button__201d5 {
+		.button_9OQtot {
 			flex: 0 0 auto;
 			font-weight: 600;
 			position: relative;
@@ -198,7 +198,7 @@ body {
 			&:hover {
 				background-color: unset !important;
 			}
-			.contents__201d5:after {
+			.contents_9OQtot:after {
 				content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 16'%3E%3Cpath d='M7 10L12 15 17 10'%3E%3C/path%3E%3C/svg%3E");
 				margin-left: 8px;
 			}
@@ -208,7 +208,7 @@ body {
 
 /* Makes "add a server and discover icons green */
 
-.circleIcon__5bc7e {
+.circleIcon_g8YUxD {
     color: var(--green);
 }
 
@@ -221,7 +221,7 @@ body {
 }
 
 /* Removes the sidebar when fullscreened in a livestream */
-.sidebar__5e434.hidden_c48ade {
+.sidebar_pog62O.hidden_c48ade {
     position: absolute !important;
 }
 
@@ -245,7 +245,7 @@ body {
     border-radius: var(--radius-round) !important;
 }
 
-.stack_dbd263 {
+.stack_TWWX0S {
     background: unset; /* unsure if this breaks anything, remove if it does */
 }
 
@@ -259,19 +259,19 @@ body {
 /* Removes separator between chat and channel bar */
 
 /* Fixes a bunch of buttons*/
-.button__201d5:not(.cta_a3a802, .colorRed__201d5) {
+.button_9OQtot:not(.cta_a3a802, .colorRed_9OQtot) {
 	border: unset;
 }
 .item_aa8da2 {
 	transition: none !important;
 }
-:is(.sidebar__5e434) .selected_aa8da2.item_aa8da2 {
+:is(.sidebar_pog62O) .selected_aa8da2.item_aa8da2 {
 	background: var(--background-modifier-selected) !important;
 }
-:is(.sidebar__5e434) .side_b3f026 .themed_aa8da2.item_aa8da2:hover:not(.disabled_b3f026) {
+:is(.sidebar_pog62O) .side_b3f026 .themed_aa8da2.item_aa8da2:hover:not(.disabled_b3f026) {
 	background-color: var(--background-modifier-hover);
 }
-:is(.sidebar__5e434) .selected_aa8da2.item_aa8da2:hover {
+:is(.sidebar_pog62O) .selected_aa8da2.item_aa8da2:hover {
 	color: var(--text-primary);
 }
 
@@ -281,7 +281,7 @@ body {
 
 /* fixes "add server" and "discover" buttons */
 
-.circleIconButton__5bc7e {
+.circleIconButton_g8YUxD {
     width: 50px!important;
     height: 50px !important;
     transform: translate(0px, 6px);
@@ -301,13 +301,13 @@ body {
 
 
 /* remove black outline on right side on channel side bar */
-div.sidebar__5e434.theme-dark.images-dark {
+div.sidebar_pog62O.theme-dark.images-dark {
 transform: translate(1px);
 }
 
 
 /* fix color of Message Bar */
-.scrollableContainer__74017 {
+.scrollableContainer_2x8-Qn {
   background-color: rgba(255, 255, 255, 0.048);
 
 }
@@ -317,7 +317,7 @@ transform: translate(1px);
 
 
 /* Collapse left grid tracks + zero the variables in fullscreen */
-.base__5e434[data-fullscreen="true"] {
+.base_pog62O[data-fullscreen="true"] {
   /* keep grid (Discord relies on it), but remove the two left tracks */
   grid-template-columns: [start] 0 [guildsEnd] 0 [channelsEnd] 1fr [end] !important;
 
@@ -327,14 +327,14 @@ transform: translate(1px);
 }
 
 /* Hide the actual left-rail elements so they don't paint borders/gaps */
-.base__5e434[data-fullscreen="true"] .guilds__5e434,
-.base__5e434[data-fullscreen="true"] .sidebar__5e434 {
+.base_pog62O[data-fullscreen="true"] .guilds_pog62O,
+.base_pog62O[data-fullscreen="true"] .sidebar_pog62O {
   display: none !important;
   width: 0 !important;
 }
 
 /* Kill the left border the channel list would draw when visible */
-.base__5e434[data-fullscreen="true"] .sidebarList__5e434 {
+.base_pog62O[data-fullscreen="true"] .sidebarList_pog62O {
   border: 0 !important;
 }
 
@@ -350,7 +350,7 @@ transform: translate(1px);
 /* The page (and the stream inside it) starts below the bar instead of under it.
    contain: layout makes the page the containing block, so this also holds
    if the fullscreen call wrapper is position: fixed. */
-.base__5e434[data-fullscreen="true"] .page__5e434 {
+.base_pog62O[data-fullscreen="true"] .page_pog62O {
   grid-area: page !important;
   width: 100% !important;
   height: calc(100% - var(--nol-fullscreen-bar-height)) !important;
@@ -359,7 +359,7 @@ transform: translate(1px);
   contain: layout;
 }
 
-:root:has(.base__5e434[data-fullscreen="true"]) .systemBar_c38106 {
+:root:has(.base_pog62O[data-fullscreen="true"]) .systemBar_3zSH5d {
   /* Discord sizes the bar and its buttons from this variable */
   --custom-app-top-bar-height: var(--nol-fullscreen-bar-height);
   display: flex !important;
@@ -376,12 +376,12 @@ transform: translate(1px);
 }
 
 /* window buttons shrunk to fit the slim bar */
-:root:has(.base__5e434[data-fullscreen="true"]) .winButtons_c38106 {
+:root:has(.base_pog62O[data-fullscreen="true"]) .winButtons_3zSH5d {
   display: flex !important;
   height: 100%;
   opacity: 1 !important;
   pointer-events: auto !important;
-  & .winButton_c38106 {
+  & .winButton_3zSH5d {
     height: 100%;
   }
   & svg {
@@ -397,15 +397,15 @@ transform: translate(1px);
 .clickable__c99c2{
     left:05px;
 }
-.wrapper_cc5dd2:has(> .svg_cc5dd2.shiftSVG_cc5dd2) {
+.wrapper_hqZPsU:has(> .svg_hqZPsU.shiftSVG_hqZPsU) {
     transform: translate(-1.5px, -1px) !important;
 }
 
-.folderButtonInner__48112{
+.folderButtonInner_RTMSuZ{
     border-radius: 20%;
 }
 
-.folderIcon__48112:hover{
+.folderIcon_RTMSuZ:hover{
     background-color: rgba(0,0, 0,0);
 }
 .container__8a031.modal__e4491 {
@@ -435,7 +435,7 @@ transform: translate(1px);
    custom property, which restyled the entire channel list each time.
 
    inherits:false is what makes this cheap. The variable is written on
-   .sidebar__5e434 and read on that same element (the grid track), so it
+   .sidebar_pog62O and read on that same element (the grid track), so it
    never needs to reach descendants -- and because it cannot, the browser
    skips the subtree entirely when it changes.
 
@@ -452,13 +452,13 @@ transform: translate(1px);
    redesign_v3 hid the drag handle outright and pinned the
    channel list to a fixed 240px. Both are undone here; every
    consumer now reads the single --nol-sidebar-w variable. */
-.base__5e434 .sidebar__5e434 {
+.base_pog62O .sidebar_pog62O {
 	position: relative;
 }
 
 /* the handle itself — absolutely positioned so it never
    becomes a stray grid item and never spawns an extra row */
-.base__5e434 .sidebar__5e434 > .sidebarResizeHandle__5e434 {
+.base_pog62O .sidebar_pog62O > .sidebarResizeHandle_pog62O {
 	display: block !important;
 	position: absolute;
 	inset: 0 0 0 auto;
@@ -467,7 +467,7 @@ transform: translate(1px);
 	cursor: ew-resize;
 }
 
-.base__5e434 .sidebar__5e434 > .sidebarList__5e434 {
+.base_pog62O .sidebar_pog62O > .sidebarList_pog62O {
 	width: 240px;
 	flex: 0 0 auto !important;
 	contain: layout;
@@ -476,104 +476,104 @@ transform: translate(1px);
 
 /* ---------- 4. User panel ---------- */
 
-.activityPanel__5e434 {
+.activityPanel_pog62O {
 	flex-shrink: 0;
 	margin-bottom: 1px;
 	border-bottom: 0;
 }
-.wrapper_e131a9 {
+.wrapper_9U6LUN {
 	display: none;
 }
-.wrapper_e131a9:has(.connection_e131a9) {
+.wrapper_9U6LUN:has(.connection_9U6LUN) {
 	display: block;
 	flex-grow: 1;
 }
-.container_e131a9 {
+.container_9U6LUN {
 	height: 100%;
 }
-.actionButtons_e131a9 {
+.actionButtons_9U6LUN {
 	height: 50%;
 }
-:is(.container_e131a9, .container__37e49) {
+:is(.container_9U6LUN, .container_g6VwXp) {
 	background-color: var(--background-gradient-highest, var(--background-base-low));
 }
-.container__37e49 {
+.container_g6VwXp {
 	flex-shrink: 0;
 	padding-left: 4%;
 	padding-right: 0;
 }
 
 /* username / subtext must not be clipped by the panel */
-.panelSubtextContainer__37e49 {
+.panelSubtextContainer_g6VwXp {
 	flex: 1 1 auto !important;
 	min-width: max-content !important;
 	width: max-content !important;
 	overflow: visible !important;
 }
-.panelSubtextContainer__37e49 + * {
+.panelSubtextContainer_g6VwXp + * {
 	flex: 0 0 auto !important;
 }
-.hovered__0263c {
+.hovered_Dq3ch1 {
 	min-width: max-content !important;
 	max-width: none !important;
 	white-space: nowrap !important;
 }
-.hoverRoll__0263c {
+.hoverRoll_Dq3ch1 {
 	min-width: max-content !important;
 }
-.avatarWrapper__37e49.plated__37e49 {
+.avatarWrapper_g6VwXp.plated_g6VwXp {
 	margin: 0;
 	padding: 0;
 	position: relative;
 	left: -5%;
 }
-.buttons__37e49 {
+.buttons_g6VwXp {
 	margin-right: 2% !important;
 }
 
 /* the panel follows the --nol-sidebar-w variable */
-.base__5e434 .sidebar__5e434 > .panels__5e434 {
+.base_pog62O .sidebar_pog62O > .panels_pog62O {
 	width: var(--nol-sidebar-w) !important;
 }
 
 /* ---------- 5. Title bar / window buttons ---------- */
-.winButtons_c38106 {
+.winButtons_3zSH5d {
 	gap: calc(var(--space-4) * 4);
 	padding-right: 2%;
 	right: -80px;
 }
-.winButtons_c38106 svg {
+.winButtons_3zSH5d svg {
 	height: 24px;
 	width: 14px;
 }
-:root:has(.container__8a031.modal__e4491) .winButtons_c38106 {
+:root:has(.container__8a031.modal__e4491) .winButtons_3zSH5d {
 	right: 10% !important;
 }
-.bar_c38106 {
+.bar_3zSH5d {
 	margin-bottom: -4px !important;
 }
-.trailing_c38106 {
+.trailing_3zSH5d {
 	left: 0;
 }
 .title_b6c092 {
 	overflow: visible;
 }
-.buttons__74017 {
+.buttons_2x8-Qn {
 	margin: 0 0 0 auto;
 	margin-top: auto;
 	padding-bottom: 5px;
 }
 
 /* ---------- 6. Guild rail ---------- */
-.svg_cc5dd2.shiftSVG_cc5dd2 {
+.svg_hqZPsU.shiftSVG_hqZPsU {
 	width: 52px !important;
 	height: 52px !important;
 	padding-top: 1px !important;
 	padding-bottom: 1px !important;
 	transform: translateX(-2%) scale(1.1);
 }
-.innerContainer_dfb989,
-.innerContainer_dfb989::before {
+.innerContainer_or4Hj-,
+.innerContainer_or4Hj-::before {
 	overflow: visible !important;
 	width: 110% !important;
 }
@@ -586,17 +586,21 @@ transform: translate(1px);
 /* ---------- 8. Merged QuickCSS ----------
    User panel anchored under the channel list (CSS anchor positioning).
    left: 72px is only a fallback for clients without anchor() support. */
-.sidebarList__5e434 {
+.sidebarList_pog62O {
 	anchor-name: --b;
 }
-.panels__5e434 {
+.panels_pog62O {
 	position: absolute;
 	position-anchor: --b;
 	left: 72px;
 	left: anchor(left);
 	margin-bottom: -8px;
 }
-.connection_e131a9 {
+.connection_9U6LUN {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+/* server list fills the full height so the moved user panel never blocks it */
+.wrapper_5dqHTG {
+	height: 100%;
 }
